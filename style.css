@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Martel&display=swap');
 
 body {
-    width: auto; 
+    width: 100%; 
+    height: 100%;
     margin: auto;
     background-color: #EAE3D2;
+    vertical-align: middle;
 }
 
 h1, h2, p {
@@ -12,9 +14,11 @@ h1, h2, p {
 
 h1, h2 {
     font-family: 'Cabin', sans-serif;
+    text-align: center;
+    margin: 0;
 }
 
-p {
+p, button, #output {
     font-family: 'Martel', serif;
 }
 
@@ -43,7 +47,7 @@ button[disabled] {
 }
 
 button[aria-pressed="true"] {
-    background-color: green;
+    background-color: #1C3879;
 }
 
 #output, body p {
@@ -58,6 +62,7 @@ button[aria-pressed="true"] {
     width: 80%;
     border-radius: 15px;
     margin: auto;
+    padding: 15px 30px;
 }
 
 @media only screen and (max-width: 425px) { /*Mobile query*/
