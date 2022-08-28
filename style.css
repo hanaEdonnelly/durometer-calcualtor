@@ -1,0 +1,40 @@
+body {
+    width: auto; 
+    margin: auto;
+}
+
+#buttons {
+    margin: auto;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: gray;
+    padding: 10px 15px;
+}
+
+button[disabled] {
+    background-color: lightgrey;
+}
+
+#output, body p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+    #buttons {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
