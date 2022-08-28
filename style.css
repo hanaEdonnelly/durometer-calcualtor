@@ -1,9 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Martel&display=swap');
+
 body {
     width: auto; 
     margin: auto;
+    background-color: #EAE3D2;
+}
+
+h1, h2, p {
+    color: #1C3879;
+}
+
+h1, h2 {
+    font-family: 'Cabin', sans-serif;
+}
+
+p {
+    font-family: 'Martel', serif;
 }
 
 #buttons {
+    font-size: large;
     margin: auto;
     width: 40%;
     display: flex;
@@ -18,12 +34,16 @@ button {
     color: white;
     font-weight: bold;
     border-radius: 5px;
-    background-color: gray;
-    padding: 10px 15px;
+    background-color: #607EAA;
+    padding: 12px 17px;
 }
 
 button[disabled] {
     background-color: lightgrey;
+}
+
+button[aria-pressed="true"] {
+    background-color: green;
 }
 
 #output, body p {
@@ -31,7 +51,21 @@ button[disabled] {
     text-align: center;
 }
 
-@media only screen and (max-width: 425px) {
+#main {
+    position: relative;
+    top: 50%;
+    background-color: #F9F5EB;
+    width: 80%;
+    border-radius: 15px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 425px) { /*Mobile query*/
+    body {
+        width: 100%;
+        margin: auto;
+    }
+    
     #buttons {
         width: 100%;
         justify-content: center;
